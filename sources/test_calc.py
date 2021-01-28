@@ -3,8 +3,15 @@ import calc
 
 class TestCalc(unittest.TestCase):
     """
-    Test the add function from the calc library
+    Test the add function from the calc library - new update 
     """
+
+    def test_add_integers(self):
+        """
+        Test that the addition of two integers returns the correct total
+        """
+        result = calc.add2(4, 4)
+        self.assertEqual(result, 8)
 
     def test_add_integers(self):
         """
