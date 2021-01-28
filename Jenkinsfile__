@@ -1,9 +1,8 @@
 pipeline {
-    agent { label 'Jenkins' }
+    agent { label 'MASTER' }
     options {
         skipStagesAfterUnstable()
     }
-
     stages {
         stage('Build') {
             agent {
